@@ -7,6 +7,7 @@ def find_even_values(src)
         p src[count][nest_count].to_i
       end
       nest_count += 1
+      p nest_count
     end
     count += 1
   end
