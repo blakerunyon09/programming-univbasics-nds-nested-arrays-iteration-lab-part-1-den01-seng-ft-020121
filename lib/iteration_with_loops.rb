@@ -1,13 +1,12 @@
 def find_even_values(src)
   count = 0
-  nest_count = 0
   while count < src.count do
+    nest_count = 0
     while nest_count < src[count].count do
       if src[count][nest_count] % 2 == 0
         p src[count][nest_count].to_i
       end
       nest_count += 1
-      p nest_count
     end
     count += 1
   end
